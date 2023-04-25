@@ -1,13 +1,44 @@
 <template>
   <img class="logo" src="../assets/signup.png" />
-  <h1>Welcome To Asset Management</h1>
-  <h2>signup</h2>
-  <div class="register">
-    <input type="text" v-model="name" placeholder=" Enter your Name" />
-    <input type="text" v-model="email" placeholder=" Enter your Email" />
-    <input type="password" v-model="password" placeholder=" Enter password" />
-    <button v-on:click="signUp">Sign Up</button>
-    <p><router-link to="/login-page">login</router-link></p>
+  <div class="container">
+    <h1 class="text-center">Welcome To Asset Management</h1>
+    <div class="ams-card">
+      <h2 class="m-b20">Signup here</h2>
+      <div class="ams-form-group">
+        <input
+          type="text"
+          id="name"
+          v-model="name"
+          placeholder="Enter your Name"
+          required
+          class="ams-form-control ams-form-control-lg"
+        />
+      </div>
+      <div class="ams-form-group">
+        <input
+          type="text"
+          id="email"
+          v-model="email"
+          placeholder="Enter your Email"
+          required
+          class="ams-form-control ams-form-control-lg"
+        />
+      </div>
+      <div class="ams-form-group">
+        <input
+          type="password"
+          id="password"
+          v-model="password"
+          placeholder="Enter password"
+          required
+          class="ams-form-control ams-form-control-lg"
+        />
+      </div>
+      <button v-on:click="signUp" class="ams-btn-primary ams-btn ams-btn-block">
+        Sign Up
+      </button>
+      <p class="m-b20"><router-link to="/">login</router-link></p>
+    </div>
   </div>
 </template>
 
@@ -17,30 +48,33 @@ export default {
   name: "signUp",
   data() {
     return {
-      name: " ",
-      email: " ",
-      password: " ",
+      name: "",
+      email: "",
+      password: "",
     };
   },
   methods: {
     async signUp() {
-      let result = await axios.post("http://localhost:3000/users", {
-        name: this.name,
-        email: this.email,
-        password: this.password,
-      });
+      let result = await axios.post(
+        "http://localhost:3000/api/users/register",
+        {
+          name: this.name,
+          email: this.email,
+          password: this.password,
+        }
+      );
       console.log(result);
       if (result.status == 201) {
         alert("signup success");
         localStorage.setItem("user_info", JSON.stringify(result.data));
-        this.$router.push({ name: "HomeS" });
+        this.$router.push({ name: "loginPage" });
       }
     },
   },
   mounted() {
     let user = localStorage.getItem("user_info");
     if (user) {
-      this.router.push({ name: "Homes" });
+      this.router.push({ name: "loginPage" });
     }
   },
 };

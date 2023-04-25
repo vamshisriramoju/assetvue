@@ -18,22 +18,122 @@
   },
   "users": [
     {
-      "id": 1,
       "name": "vamshi",
-      "email": "vamshi@gmail.com",
-      "password": "password"
+      "email": "vamshi4995@gmail.com",
+      "password": "$argon2id$v=19$m=65536,t=3,p=4$MAGKMsBIyAT4n2lIevpvTA$3xZQQtxZEsQzk7cbsZdhz+JAb6F36JPADb8J8hC/OF0",
+      "__v": 0
+    }
+  ],
+  "employees": [
+    {
+      "employeeName": "vamshi",
+      "employeeId": "emp1",
+      "designation": "frontend developer",
+      "department": "IT",
+      "dateOfJoining": "01-01-2023",
+      "contactNo": "9015493887",
+      "personalEmail": "vamshi@gmail.com",
+      "roleId": "RID1",
+      "id": 1
     },
     {
-      "name": "vamshi ",
-      "email": " vamshi@gmail.com",
-      "password": "password",
+      "employeeName": "madhava",
+      "employeeId": "emp2",
+      "designation": "frontend developer",
+      "department": "IT",
+      "dateOfJoining": "01-01-2023",
+      "contactNo": "9015493887",
+      "personalEmail": "vamshi@gmail.com",
+      "roleId": "RID1",
       "id": 2
     },
     {
-      "name": "tillu",
-      "email": " Tillu@gmail.com",
-      "password": "1234",
+      "employeeName": "doe",
+      "employeeId": "emp3",
+      "designation": "frontend developer",
+      "department": "IT",
+      "dateOfJoining": "01-01-2023",
+      "contactNo": "9015493887",
+      "personalEmail": "vamshi@gmail.com",
+      "roleId": "RID1",
       "id": 3
+    },
+    {
+      "employeeName": "arjuna",
+      "employeeId": "emp4",
+      "designation": "frontend developer",
+      "department": "IT",
+      "dateOfJoining": "01-01-2023",
+      "contactNo": "9015493887",
+      "personalEmail": "vamshi@gmail.com",
+      "roleId": "RID1",
+      "id": 4
+    },
+    {
+      "employeeName": "karna",
+      "employeeId": "emp5",
+      "designation": "frontend developer",
+      "department": "IT",
+      "dateOfJoining": "01-01-2023",
+      "contactNo": "9015493887",
+      "personalEmail": "vamshi@gmail.com",
+      "roleId": "RID1",
+      "id": 5
+    },
+    {
+      "employeeName": "abhimanyu",
+      "employeeId": "emp6",
+      "designation": "frontend developer",
+      "department": "IT",
+      "dateOfJoining": "01-01-2023",
+      "contactNo": "9015493887",
+      "personalEmail": "vamshi@gmail.com",
+      "roleId": "RID1",
+      "id": 6
+    },
+    {
+      "employeeName": "bheema",
+      "employeeId": "emp7",
+      "designation": "frontend developer",
+      "department": "IT",
+      "dateOfJoining": "01-01-2023",
+      "contactNo": "9015493887",
+      "personalEmail": "vamshi@gmail.com",
+      "roleId": "RID1",
+      "id": 7
+    },
+    {
+      "employeeName": "nakula",
+      "employeeId": "emp8",
+      "designation": "frontend developer",
+      "department": "IT",
+      "dateOfJoining": "01-01-2023",
+      "contactNo": "9015493887",
+      "personalEmail": "vamshi@gmail.com",
+      "roleId": "RID1",
+      "id": 8
+    },
+    {
+      "employeeName": "vamshi sri ramoju",
+      "employeeId": "emp9",
+      "designation": "frontend developer",
+      "department": "IT",
+      "dateOfJoining": "01-01-2023",
+      "contactNo": "9015493887",
+      "personalEmail": "vamshi@gmail.com",
+      "roleId": "RID1",
+      "id": 9
+    },
+    {
+      "employeeName": "tillu",
+      "employeeId": "emp10",
+      "designation": "backend developer",
+      "department": "IT",
+      "dateOfJoining": "2023-04-01",
+      "contactNo": "7396601832",
+      "personalEmail": "vam@gmail.com",
+      "roleId": "RID10",
+      "id": 10
     }
   ]
 }

@@ -1,15 +1,11 @@
 <template>
-<router-view/>
+  <router-view />
 </template>
 
 <script>
-
-
-
 export default {
-  name: 'App',
-  
-}
+  name: "App",
+};
 </script>
 
 <style>
@@ -19,14 +15,19 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding:30px;
+  margin-top:30px;
 }
-
+body {
+  padding: 0;
+  margin: 0;
+}
 .logo {
   width: 100px;
 }
 
-.register input, .login input {
+.register input,
+.login input, .add input{
   width: 300px;
   height: 40px;
   padding-left: 20px;
@@ -36,19 +37,17 @@ export default {
   margin-left: auto;
   border-radius: 10px;
   font-size: 18px;
-  font-weight: bold;
 }
 
-.register button , .login button {
+.register button,
+.login button ,.add button {
   width: 320px;
   height: 40px;
   color: white;
   border-radius: 10px;
-  background-color: blue;
+  background-color: #3368FF  ;
   cursor: pointer;
   font-size: 18px;
-  font-weight: bold;
 }
 
 </style>
-
