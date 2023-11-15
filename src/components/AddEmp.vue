@@ -102,7 +102,6 @@ export default {
       name: "",
       employees: {
         employeeName: "",
-        employeeId: "",
         designation: "",
         department: "",
         dateOfJoining: "",

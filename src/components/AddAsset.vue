@@ -15,10 +15,10 @@
         <label for="model">Model:</label>
         <input type="text" id="model"  placeholder= "Enter Model name" v-model="model" required class="ams-form-control ams-form-control-lg"/>
       </div>
-      <!-- <div class="ams-form-group">
+      <div class="ams-form-group">
         <label for="serialNumber">serialNumber:</label>
         <input type="text" id="serialNumber" placeholder= "Enter serial number"  v-model="serialNumber" required class="ams-form-control ams-form-control-lg"/>
-      </div> -->
+      </div> 
       <div class="ams-form-group">
         <label for="assignedDate">Assigned Date:</label>
         <input type="date" id="assignedDate" placeholder= "Enter assigned date" v-model="assignedDate" required class="ams-form-control ams-form-control-lg"/>
@@ -58,6 +58,7 @@ export default {
               name: this.name,
               model: this.model,
               assignedDate: this.assignedDate,
+              serialNumber: this.serialNumber
             },
           },
           {
